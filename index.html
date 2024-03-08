@@ -1,0 +1,132 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Estructura de menu</title>
+<style>
+
+body{
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://sb.gob.do/media/dlghc233/banreservas.svg');
+    background-size: 100% 125%;
+header{
+    background-color: #003366;
+    color: #fff;
+    padding: 10px 50px;
+    text-align: center;
+}
+
+.navegacion ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 5.0rem;
+    font-weight: bold;
+}
+
+.menu > li{
+        margin-right: 20px;
+        position: relative;
+	display: inline-block;
+}
+
+.menu > li > a{
+	display: block;
+	padding: 45px 60px;
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.menu li a:hover{
+	color: #CE7D35;
+	transition: all .3s;
+}
+
+footer {
+    background-color: #003366;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.submenu{
+	position: absolute;
+	background: #333333;
+	width: 120%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+}
+
+.submenu li a{
+	display: block;
+	padding: 5px;
+	color: #fff;
+	font-family: 'Arial', sans-serif;
+	text-decoration: none;
+}
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Banco de Reservas</div>
+            <ul class="menu">
+                <li><a href="#">Cuentas</a>
+                <ul class="submenu">
+		<li><a href="#">Ahorro</a></li>
+		<li><a href="#">Corriente</a></li>
+		<li><a href="#">Soluciones Digitales</a></li>
+                </ul>
+                </li>
+                <li><a href="#">Inversiones</a>
+                <ul class="submenu">
+		<li><a href="#">Deposito a Plazo</a></li>
+		<li><a href="#">Mercado de valores</a></li>
+                </ul></li>
+                <li><a href="#">Tarjetas</a>
+                <ul class="submenu">
+		<li><a href="#">Debito</a></li>
+		<li><a href="#">Credito</a></li>
+                </ul></li>
+                <li><a href="#">Prestamos</a>
+                <ul class="submenu">
+		<li><a href="#">Personales</a></li>
+		<li><a href="#">Hipotecario</a></li>
+		<li><a href="#">Vehiculos</a></li>
+                </ul></li>
+                <li><a href="#">Seguros</a> 
+                <ul class="submenu">
+		<li><a href="#">Seguro de Personas</a></li>
+		<li><a href="#">Riesgos Generales</a></li>
+                </ul></li>
+                <li><a href="#">Contacto</a>
+                <ul class="submenu">
+		<li><a href="#">809-960-2121</a></li>
+		<li><a href="#">contacto@banreservas.com</a></li>
+                </ul></li>
+            </ul>
+        </nav>
+    </header>
+    <footer>
+        <p>&copy; 2024 Banco de Reservas. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
